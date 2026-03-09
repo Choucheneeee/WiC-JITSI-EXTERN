@@ -1,0 +1,37 @@
+/* Wic Doctor Custom Branding CSS */
+
+/* Hide the original "Jitsi Meet" heading and replace with Wic Doctor */
+.header-text-title::before {
+    content: "Wic Doctor";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.header-text-title {
+    font-size: 0;
+    position: relative;
+}
+
+.header-text-title::before {
+    font-size: 4rem;
+}
+
+/* Alternative: Use display: none on the text and show our version */
+.header-text-title {
+    color: transparent;
+    position: relative;
+}
+
+.header-text-title::after {
+    content: "Wic Doctor";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: -1px;
+}

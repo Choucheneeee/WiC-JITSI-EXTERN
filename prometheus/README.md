@@ -1,12 +1,12 @@
-# Prometheus Scraping & Grafana Dashboard for Jitsi
+# Prometheus Scraping & Grafana Dashboard for Wic Doctor
 
 ## Overview
 
-This project aims to integrate **Prometheus** and **Grafana** with Jitsi to monitor and visualize performance metrics.
+This project aims to integrate **Prometheus** and **Grafana** with Wic Doctor to monitor and visualize performance metrics.
 
 ## Features
 
-- **Prometheus Integration**: Collects metrics from Jitsi containers.
+- **Prometheus Integration**: Collects metrics from Wic Doctor containers.
 - **Grafana Dashboards**: Visualizes the metrics for easy analysis.
 
 ## Installation
@@ -18,14 +18,14 @@ This project aims to integrate **Prometheus** and **Grafana** with Jitsi to moni
 
 ### Steps
 
-1. **Setup Jitsi with Docker Compose**
+1. **Setup Wic Doctor with Docker Compose**
 
    Follow the [Jitsi Docker](https://github.com/jitsi/docker-jitsi-meet) setup instructions. <br>
    Also, you could follow Self - Hosting guide of Jitsi Meet: [Jitsi handbook](https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-docker/)
 
 2. **Configure Prometheus**
 
-   Edit `/prometheus/prometheus.yml` with any **Port / Container name** changes are there to scrape metrics from Jitsi containers:
+   Edit `/prometheus/prometheus.yml` with any **Port / Container name** changes are there to scrape metrics from Wic Doctor containers:
 
    ```yaml
    scrape_configs:
@@ -36,7 +36,7 @@ This project aims to integrate **Prometheus** and **Grafana** with Jitsi to moni
 
 3. **Run Docker Compose**
 
-   The following command turns up the Jitsi Meet:
+   The following command turns up the Wic Doctor:
 
    ```bash
    docker-compose up -d
@@ -66,7 +66,7 @@ This project aims to integrate **Prometheus** and **Grafana** with Jitsi to moni
 
 3. **Import Dashboard**
 
-   Import the provided JSON file in Grafana to visualize Jitsi metrics.
+   Import the provided JSON file in Grafana to visualize Wic Doctor metrics.
 
 ## Contributer
 
